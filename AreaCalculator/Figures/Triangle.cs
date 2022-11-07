@@ -30,7 +30,8 @@ public class Triangle : Shape
     {
         if (firstSide + secondSide < thirdSide ||
             secondSide + thirdSide < firstSide ||
-            thirdSide + firstSide < secondSide)
+            thirdSide + firstSide < secondSide ||
+            firstSide <= 0 || secondSide <= 0 || thirdSide <= 0)
         {
             throw new FigureException("This triangle can't exist");
         }
