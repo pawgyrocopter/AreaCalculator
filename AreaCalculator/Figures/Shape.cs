@@ -2,7 +2,7 @@
 
 public abstract class Shape
 {
-    protected const decimal PI = 3.14m;
+    protected const decimal PI = (decimal) Math.PI;
     
     public virtual decimal CalculateArea()
     {
